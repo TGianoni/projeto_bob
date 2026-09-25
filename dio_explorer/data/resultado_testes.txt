@@ -1,0 +1,79 @@
+=================================================================
+  DIO EXPLORER — RELATÓRIO DE TESTES UNITÁRIOS
+  Gerado em: 25/09/2026, 10:49:11
+=================================================================
+
+
+── /trilha — Consulta de trilhas Java ────────────────
+  [✔] Retorna ao menos 1 trilha para 'Java'
+  [✔] Trilha Java contém campo 'nome'
+  [✔] Trilha Java contém campo 'tecnologia'
+  [✔] Trilha Java contém campo 'nivel'
+  [✔] Trilha Java contém campo 'numero_modulos'
+  [✔] Trilha Java contém campo 'xp_total'
+  [✔] Trilha Java contém campo 'badges_disponiveis'
+  [✔] Trilha Java contém campo 'lives'
+  [✔] Trilha Java contém campo 'vitalicio'
+  [✔] Trilha Java contém campo 'promocoes'
+  [✔] xp_total da trilha Java é > 0
+  [✔] numero_modulos da trilha Java é > 0
+  [✔] Busca é case-insensitive ('java')
+  [✔] Busca é case-insensitive ('JAVA')
+  [✔] Busca por tecnologia inexistente retorna array vazio
+  [✔] Plano de estudo é gerado como string
+  [✔] Plano contém o nome da trilha
+  [✔] Plano contém seção de Módulos
+  [✔] Plano contém seção de Badges
+  [✔] Plano contém seção de Lives
+  [✔] Plano contém seção de Promoção
+  [✔] gerarPlanoEstudo com null retorna null
+
+── /desafio — Geração de desafio para Java ───────────
+  [✔] Desafio gerado não contém erro
+  [✔] Desafio contém campo 'id'
+  [✔] Desafio contém campo 'enunciado'
+  [✔] Desafio contém campo 'requisitos'
+  [✔] Desafio contém campo 'dicas'
+  [✔] Desafio contém campo 'xp'
+  [✔] Desafio contém campo 'badge'
+  [✔] XP de nível intermediário é 1200
+  [✔] Nível inválido retorna erro
+  [✔] Tecnologia vazia retorna erro
+  [✔] Nível 'iniciante' retorna xp 500
+  [✔] Nível 'avancado' retorna xp 2500
+  [✔] Desafio formatado é string
+  [✔] Desafio formatado contém '⚔️'
+  [✔] Desafio formatado contém ID
+  [✔] Desafio formatado contém seção Enunciado
+  [✔] Desafio formatado contém seção Requisitos
+  [✔] Desafio formatado contém seção Recompensa
+  [✔] formatarDesafio com erro exibe ❌
+
+── /certificado — Geração de certificado para aluno Java 
+  [✔] Certificado gerado sem erro
+  [✔] Certificado contém certId
+  [✔] Certificado contém nomeUsuario
+  [✔] Certificado contém dados da trilha
+  [✔] Certificado contém data de emissão
+  [✔] Certificado markdown é string
+  [✔] Markdown contém nome do usuário em maiúsculo
+  [✔] Markdown contém nome da trilha
+  [✔] Markdown contém certificado_id no frontmatter
+  [✔] Markdown contém seção Badges
+  [✔] Certificado com trilha inexistente retorna erro
+  [✔] Certificado sem nome retorna erro
+  [✔] Certificado sem trilha retorna erro
+
+=================================================================
+  RESUMO
+=================================================================
+  Total de testes : 54
+  Aprovados (PASS) : 54
+  Reprovados (FAIL): 0
+  Cobertura        : 100.0%
+  Resultado        : ✅ APROVADO
+
+  Artefatos gerados:
+    - Certificado : dio_explorer/certificados-emitidos/João_Gianoni_DIO-2026-0C5DN8.md
+    - Desafio     : dio_explorer/desafios-gerados/desafio_DIO-JAVA-2296.md
+=================================================================

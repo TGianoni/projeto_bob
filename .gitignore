@@ -1,0 +1,22 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Cache de progresso
+dio_explorer/data/cache-progresso/
+
+# Arquivos temporários
+*.tmp
+
+# Logs
+*.log
+
+# Build do MCP (gerado localmente)
+dio_explorer/mcp/build/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
